@@ -1,0 +1,7 @@
+a = int(input('Podaj długość jednego boku: '))
+b = int(input('Podaj długość drugiego boku: '))
+p = a * b
+if a == b:
+    print ('Pole kwadratu wynosi ', p)
+else:
+    print ('Pole prostokata wynosi ', p)
