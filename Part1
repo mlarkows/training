@@ -1,0 +1,91 @@
+#Zad1
+a = int(input('Podaj długość jednego boku: '))
+b = int(input('Podaj długość drugiego boku: '))
+p = a * b
+if a == b:
+    print ('Pole kwadratu wynosi ', p)
+else:
+    print ('Pole prostokata wynosi ', p)
+
+#Zad2
+a = int(input('Podaj dowolna liczbe: '))
+liczby = []
+b = a % 2
+c = a % 3 
+d = a % 5 
+c = a % 7
+if a == 0:
+    liczby.append(a)
+    print (liczby)
+    
+#Zad3
+a = int(input('podaj wartosc a'))
+b = int(input('podaj wartosc b'))
+znak = input('podaj znak dzialania')
+if znak == '*':
+    print (a*b)
+elif znak == '-':
+    print (a-b)
+elif znak == '+':
+    print (a+b)
+elif znak == '/':
+    if b == 0:
+	    print ('nie mozna dzielic przez 0')
+    else:
+	    print (a/b)
+      
+#Zad4
+x1 = int(input('podaj poczatek przedzialu liczbowego: '))
+x2 = int(input('podaj konie przedzialu liczbowego: '))
+numbers = list()
+for x in range (x1, x2):
+    if x%5 == 0:
+	    numbers.append(x)
+print (numbers)
+
+#Zad5
+a = int(input('Podaj 1. dowolna liczbe: '))
+b = int(input('Podaj 2. dowolna liczbe: '))
+c = int(input('Podaj 3. dowolna liczbe: '))
+d = int(input('Podaj 4. dowolna liczbe: '))
+e = int(input('Podaj 5. dowolna liczbe: '))
+f = int(input('Podaj 6. dowolna liczbe: '))
+list = [a,b,c,d,e,f]
+print (list)
+list.sort()
+print (list)
+
+#Zad6
+slownik = {1:'jablko', 2:'gruszka', 3:'sliwka', 4:'banan', 5:'arbuz'}
+print ('1: ', slownik[1])
+print ('2: ', slownik[2])
+print ('3: ', slownik[3])
+print ('4: ', slownik[4])
+print ('5: ', slownik[5])
+
+#Zad7
+tuple = (2,4,5,1,6,8,9,12,34,33)
+print (tuple)
+print ('max wartosc: ', max(tuple))
+print ('min wartosc: ', min(tuple))
+
+#Zad8
+list = ['Earth', 'Poland', 'Wroclaw']
+print (list[0], list[1], list[2])
+
+#Zad9
+a = '/bin:/usr/bin:/usr/local/bin'
+b = a.split(':')
+print (b)
+
+#Zad10
+for x in range (1,100):
+    if x % 7 == 0:
+        print (x)
+
+#Zad12
+list = ['jablko', 'gruszka', 'sliwka']
+print (list[0])
+print (list.index('jablko'))
+print (list)
+print (list.index('jablko'), list.index('gruszka'), list.index('sliwka'))
